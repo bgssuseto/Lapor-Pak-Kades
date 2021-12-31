@@ -37,7 +37,7 @@
                                 <td><?= $m['menu']; ?></td>
                                 <td>
                                     <a class="badge badge-success" href="<?= site_url('menu/editmenu/'.$m['id']); ?>">Ubah</a>
-                                    <a class="badge badge-danger" href="#!" onclick="deleteConfirm('<?= site_url('menu/deletemenu/'.$m['id']); ?>')">Hapus</a>
+                                    <a class="badge badge-danger" href="<?= site_url('menu/deletemenu/'.$m['id']); ?>">Hapus</a>
                                 </td>
                             </tr>
                         <?php $index++; ?>

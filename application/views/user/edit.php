@@ -53,7 +53,7 @@
                         </div>
                     </div>
                 </form>
-                <a class="badge badge-danger" href="#!" onclick="deleteConfirm('<?= site_url('user/deleteuser/'.$user['id']); ?>')">Hapus Akun</a>
+                <a class="badge badge-danger" href="<?= site_url('user/deleteuser/'.$user['id']); ?>">Hapus Akun</a>
             </div>
         </div>
     </div>

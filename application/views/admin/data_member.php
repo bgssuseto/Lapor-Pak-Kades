@@ -47,7 +47,7 @@
                                 <td>
                                     <a class="badge badge-info" href="<?= site_url('admin/detailmember/'.$um['id']); ?>">Detail</a>
                                     <a class="badge badge-success" href="<?= site_url('admin/editmember/'.$um['id']); ?>">Ubah</a>
-                                    <a class="badge badge-danger" href="#!" onclick="deleteConfirm('<?= site_url('admin/deletemember/'.$um['id']); ?>')">Hapus</a>
+                                    <a class="badge badge-danger" href="<?= site_url('admin/deletemember/'.$um['id']); ?>">Hapus</a>
                                 </td>
                             </tr>
                         <?php $index++; ?>

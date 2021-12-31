@@ -13,6 +13,11 @@ class Report_model extends CI_Model {
         return $this->db->get_where('user_report', ['id' => $id])->row_array();
     }
 
+    public function getByIdUser($id)
+    {
+        return $this->db->get_where('user_report', [$id =>'id'])->result_array();
+    }
+
     public function save()
     {
         $post = $this->input->post();

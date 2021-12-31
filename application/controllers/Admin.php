@@ -215,4 +215,13 @@ class Admin extends CI_Controller {
         }
     }
 
+    public function tambah_menu(){
+        $data['title'] = 'Tambah Menu';
+        $this->load->view('templates/admin_header', $data);
+        $this->load->view('templates/admin_sidebar');
+        $this->load->view('templates/admin_topbar', $data);
+        $this->load->view('menu/tambah_menu', $data);
+        $this->load->view('templates/admin_footer');
+    }
+
 }
